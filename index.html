@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yash and Yashica</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="site-load-animation">
+    <h1>Welcome to Yash ❤️ Yashica</h1>
+  </div>
+
+  <audio autoplay loop>
+    <source src="background-music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <section class="countdown">
+    <h2>Countdowns</h2>
+    <p>Yash's Birthday: <span id="yash-bday"></span></p>
+    <p>Yashica's Birthday: <span id="yashica-bday"></span></p>
+  </section>
+
+  <section class="qa-section">
+    <h2>Q&A Time 💬</h2>
+    <form id="qa-form">
+      <div class="question">1. What's your favourite memory from our relationship?</div><input type="text" required />
+      <div class="question">2. What's one thing you admire most about me?</div><input type="text" required />
+      <div class="question">3. What are your biggest dreams for our future together?</div><input type="text" required />
+      <div class="question">4. What's a skill you would like to learn and I could help in that?</div><input type="text" required />
+      <div class="question">5. What are your biggest fears?</div><input type="text" required />
+      <div class="question">6. What's your favourite way to spend a lazy Sunday?</div><input type="text" required />
+      <div class="question">7. What's your favourite thing to do alone?</div><input type="text" required />
+      <div class="question">8. What's your favourite way to be loved?</div><input type="text" required />
+      <div class="question">9. What's your biggest pet peeve?</div><input type="text" required />
+      <div class="question">10. What's a book/movie/song you think we’d both love?</div><input type="text" required />
+      <div class="question">11. Would you like to spend the rest of your life with me?</div>
+      <label><input type="radio" name="q11" required> Yes</label>
+      <label><input type="radio" name="q11"> No</label>
+      <br/><br/>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="popup" class="popup">💖 Answer submitted! 💖</div>
+  </section>
+
+  <section class="private-area">
+    <h2>🔒 Private Area</h2>
+    <input type="password" id="private-pass" placeholder="Enter password"/>
+    <button onclick="checkPassword()">Enter</button>
+    <div id="private-content" style="display:none;">
+      <h3>Upload Private Images</h3>
+      <input type="file" accept="image/*" multiple />
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
