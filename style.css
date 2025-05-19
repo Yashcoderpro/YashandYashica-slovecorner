@@ -1,0 +1,24 @@
+/* General resets and aesthetic fonts */
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: #ffe6f0;
+  color: #880e4f;
+  text-align: center;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+h1, h2 {
+  color: #c2185b;
+  font-weight: bold;
+  animation: popIn 1s ease-in-out;
+}
+
+.site-load-animation {
+  animation: fadeIn 2s ease-in;
+}
+
+section {
+  margin: 40px a
+  
